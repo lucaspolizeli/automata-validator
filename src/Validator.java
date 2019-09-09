@@ -32,7 +32,7 @@ public class Validator {
 
             if(wordToValidate.equals("")){
                 isValidWord = false;
-                return;
+                continue;
             }
 
             for (char letter : wordToValidate.toCharArray()) {
