@@ -3,10 +3,10 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Stack;
 
-public class Main {
+public class Validator {
     public static void main(String[] args) throws Exception {
-        String path = System.getProperty("user.dir");
-        File textFile = new File(path + "/src/data.txt");
+        //String path = System.getProperty("user.dir");
+        File textFile = new File(args[0]);
 
         Reader reader = new Reader();
 
