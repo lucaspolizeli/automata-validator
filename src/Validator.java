@@ -5,8 +5,13 @@ import java.util.Stack;
 
 public class Validator {
     public static void main(String[] args) throws Exception {
-        //String path = System.getProperty("user.dir");
-        File textFile = new File(args[0]);
+        File textFile;
+        try {
+            textFile = new File(args[0]);
+        } catch (Exception e){
+            System.out.println("Arquivo não encontrado/inválido!");
+            return;
+        }
 
         Reader reader = new Reader();
 
