@@ -30,6 +30,11 @@ public class Validator {
 
             Boolean isValidWord = true;
 
+            if(wordToValidate.equals("")){
+                isValidWord = false;
+                return;
+            }
+
             for (char letter : wordToValidate.toCharArray()) {
                 try {
                     lettersToValidate.push(letter);
