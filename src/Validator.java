@@ -30,7 +30,7 @@ public class Validator {
 
             Boolean isValidWord = true;
 
-            if(wordToValidate.equals("")){
+            if(wordToValidate.equals("") || wordToValidate.equals(" ")){
                 isValidWord = false;
                 continue;
             }
